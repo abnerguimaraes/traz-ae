@@ -1,0 +1,6 @@
+framework module Pods_traz_ae {
+  umbrella header "Pods-traz-ae-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		23CEFA8A268FAA6A0094C822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA89268FAA6A0094C822 /* AppDelegate.swift */; };
 		23CEFA8C268FAA6A0094C822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */; };
-		23CEFA8E268FAA6A0094C822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA8D268FAA6A0094C822 /* ViewController.swift */; };
 		23CEFA91268FAA6A0094C822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA8F268FAA6A0094C822 /* Main.storyboard */; };
 		23CEFA93268FAA6D0094C822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA92268FAA6D0094C822 /* Assets.xcassets */; };
 		23CEFA96268FAA6D0094C822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA94268FAA6D0094C822 /* LaunchScreen.storyboard */; };
+		23CEFA9E268FAD120094C822 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA9D268FAD120094C822 /* GoogleService-Info.plist */; };
+		23CEFAA2268FB8E50094C822 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFAA0268FB8D60094C822 /* ArchitectsDaughter-Regular.ttf */; };
+		23CEFAA3268FB8E80094C822 /* CarterOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFAA1268FB8D70094C822 /* CarterOne-Regular.ttf */; };
+		23CEFAA6268FBC4F0094C822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */; };
+		23CEFAA8268FFC8F0094C822 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */; };
+		23CEFAAB26900A200094C822 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAAA26900A200094C822 /* Alerta.swift */; };
+		56520E276C826346FE3D247D /* Pods_traz_ae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F655B437A5C483DA8955B97 /* Pods_traz_ae.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23CEFA86268FAA6A0094C822 /* traz-ae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "traz-ae.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CEFA89268FAA6A0094C822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23CEFA8D268FAA6A0094C822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23CEFA90268FAA6A0094C822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23CEFA92268FAA6D0094C822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CEFA95268FAA6D0094C822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23CEFA97268FAA6D0094C822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CEFA9D268FAD120094C822 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		23CEFAA0268FB8D60094C822 /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
+		23CEFAA1268FB8D70094C822 /* CarterOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CarterOne-Regular.ttf"; sourceTree = "<group>"; };
+		23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		23CEFAAA26900A200094C822 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		2FB6CB265BA400A74E6E46AE /* Pods-traz-ae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traz-ae.debug.xcconfig"; path = "Target Support Files/Pods-traz-ae/Pods-traz-ae.debug.xcconfig"; sourceTree = "<group>"; };
+		3F655B437A5C483DA8955B97 /* Pods_traz_ae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traz_ae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F995F7B0DB96598917DC6899 /* Pods-traz-ae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traz-ae.release.xcconfig"; path = "Target Support Files/Pods-traz-ae/Pods-traz-ae.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56520E276C826346FE3D247D /* Pods_traz_ae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				23CEFA88268FAA6A0094C822 /* traz-ae */,
 				23CEFA87268FAA6A0094C822 /* Products */,
+				C094A9EC9BEA9C6DE7AC7D4B /* Pods */,
+				5822EB1779A5C2FDE95D0341 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,61 @@
 		23CEFA88268FAA6A0094C822 /* traz-ae */ = {
 			isa = PBXGroup;
 			children = (
+				23CEFAA9269009FA0094C822 /* Components */,
+				23CEFAA4268FBC310094C822 /* ViewController */,
+				23CEFA9F268FB8810094C822 /* Fonts */,
+				23CEFA9D268FAD120094C822 /* GoogleService-Info.plist */,
 				23CEFA89268FAA6A0094C822 /* AppDelegate.swift */,
 				23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */,
-				23CEFA8D268FAA6A0094C822 /* ViewController.swift */,
 				23CEFA8F268FAA6A0094C822 /* Main.storyboard */,
 				23CEFA92268FAA6D0094C822 /* Assets.xcassets */,
 				23CEFA94268FAA6D0094C822 /* LaunchScreen.storyboard */,
 				23CEFA97268FAA6D0094C822 /* Info.plist */,
 			);
 			path = "traz-ae";
+			sourceTree = "<group>";
+		};
+		23CEFA9F268FB8810094C822 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23CEFAA0268FB8D60094C822 /* ArchitectsDaughter-Regular.ttf */,
+				23CEFAA1268FB8D70094C822 /* CarterOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		23CEFAA4268FBC310094C822 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */,
+				23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		23CEFAA9269009FA0094C822 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				23CEFAAA26900A200094C822 /* Alerta.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5822EB1779A5C2FDE95D0341 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F655B437A5C483DA8955B97 /* Pods_traz_ae.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C094A9EC9BEA9C6DE7AC7D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FB6CB265BA400A74E6E46AE /* Pods-traz-ae.debug.xcconfig */,
+				F995F7B0DB96598917DC6899 /* Pods-traz-ae.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23CEFA9A268FAA6D0094C822 /* Build configuration list for PBXNativeTarget "traz-ae" */;
 			buildPhases = (
+				A7316CC0A53E4607AFA4C908 /* [CP] Check Pods Manifest.lock */,
 				23CEFA82268FAA6A0094C822 /* Sources */,
 				23CEFA83268FAA6A0094C822 /* Frameworks */,
 				23CEFA84268FAA6A0094C822 /* Resources */,
+				56A86526757886E8294A65A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23CEFA96268FAA6D0094C822 /* LaunchScreen.storyboard in Resources */,
+				23CEFAA3268FB8E80094C822 /* CarterOne-Regular.ttf in Resources */,
+				23CEFAA2268FB8E50094C822 /* ArchitectsDaughter-Regular.ttf in Resources */,
+				23CEFA9E268FAD120094C822 /* GoogleService-Info.plist in Resources */,
 				23CEFA93268FAA6D0094C822 /* Assets.xcassets in Resources */,
 				23CEFA91268FAA6A0094C822 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +200,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56A86526757886E8294A65A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traz-ae/Pods-traz-ae-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traz-ae/Pods-traz-ae-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-traz-ae/Pods-traz-ae-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7316CC0A53E4607AFA4C908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-traz-ae-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23CEFA82268FAA6A0094C822 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CEFA8E268FAA6A0094C822 /* ViewController.swift in Sources */,
+				23CEFAA6268FBC4F0094C822 /* LoginViewController.swift in Sources */,
+				23CEFAAB26900A200094C822 /* Alerta.swift in Sources */,
 				23CEFA8A268FAA6A0094C822 /* AppDelegate.swift in Sources */,
 				23CEFA8C268FAA6A0094C822 /* SceneDelegate.swift in Sources */,
+				23CEFAA8268FFC8F0094C822 /* CadastroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,7 @@
 		};
 		23CEFA9B268FAA6D0094C822 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB6CB265BA400A74E6E46AE /* Pods-traz-ae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +409,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.abner.traz-ae";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23CEFA9C268FAA6D0094C822 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F995F7B0DB96598917DC6899 /* Pods-traz-ae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.abner.traz-ae";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
