@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2348999C26928B2000D64EF9 /* ComprasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348999B26928B2000D64EF9 /* ComprasTableViewCell.swift */; };
+		2348999E26928CD700D64EF9 /* ComprasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */; };
 		23CEFA8A268FAA6A0094C822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA89268FAA6A0094C822 /* AppDelegate.swift */; };
 		23CEFA8C268FAA6A0094C822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */; };
 		23CEFA91268FAA6A0094C822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA8F268FAA6A0094C822 /* Main.storyboard */; };
@@ -18,10 +20,13 @@
 		23CEFAA6268FBC4F0094C822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */; };
 		23CEFAA8268FFC8F0094C822 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */; };
 		23CEFAAB26900A200094C822 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAAA26900A200094C822 /* Alerta.swift */; };
+		23CEFAAD2690AC6C0094C822 /* ContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFAAC2690AC6B0094C822 /* ContatosViewController.swift */; };
 		56520E276C826346FE3D247D /* Pods_traz_ae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F655B437A5C483DA8955B97 /* Pods_traz_ae.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2348999B26928B2000D64EF9 /* ComprasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewCell.swift; sourceTree = "<group>"; };
+		2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewController.swift; sourceTree = "<group>"; };
 		23CEFA86268FAA6A0094C822 /* traz-ae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "traz-ae.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CEFA89268FAA6A0094C822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		23CEFAAA26900A200094C822 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		23CEFAAC2690AC6B0094C822 /* ContatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewController.swift; sourceTree = "<group>"; };
 		2FB6CB265BA400A74E6E46AE /* Pods-traz-ae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traz-ae.debug.xcconfig"; path = "Target Support Files/Pods-traz-ae/Pods-traz-ae.debug.xcconfig"; sourceTree = "<group>"; };
 		3F655B437A5C483DA8955B97 /* Pods_traz_ae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traz_ae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F995F7B0DB96598917DC6899 /* Pods-traz-ae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traz-ae.release.xcconfig"; path = "Target Support Files/Pods-traz-ae/Pods-traz-ae.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 			children = (
 				23CEFAA5268FBC4F0094C822 /* LoginViewController.swift */,
 				23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */,
+				23CEFAAC2690AC6B0094C822 /* ContatosViewController.swift */,
+				2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				23CEFAAA26900A200094C822 /* Alerta.swift */,
+				2348999B26928B2000D64EF9 /* ComprasTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -248,10 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23CEFAA6268FBC4F0094C822 /* LoginViewController.swift in Sources */,
+				2348999C26928B2000D64EF9 /* ComprasTableViewCell.swift in Sources */,
 				23CEFAAB26900A200094C822 /* Alerta.swift in Sources */,
 				23CEFA8A268FAA6A0094C822 /* AppDelegate.swift in Sources */,
 				23CEFA8C268FAA6A0094C822 /* SceneDelegate.swift in Sources */,
 				23CEFAA8268FFC8F0094C822 /* CadastroViewController.swift in Sources */,
+				2348999E26928CD700D64EF9 /* ComprasTableViewController.swift in Sources */,
+				23CEFAAD2690AC6C0094C822 /* ContatosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

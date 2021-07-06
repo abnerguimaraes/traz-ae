@@ -25,11 +25,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad();
         
         //retirar o logoff automatico
-        do
-            { try auth.signOut();
-        }catch{
-            print("teste")
-        }
+//        do
+//            { try auth.signOut();
+//        }catch{
+//            print("teste")
+//        }
         
         
         handleLogado = auth.addStateDidChangeListener({ auth, user in
@@ -47,6 +47,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.txtSenha.delegate = self
         self.txtSenha.addTarget(self, action: #selector(textFieldDidChange(sender:)), for: .editingChanged)
+        
+    }
+    
+    @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {
+        //let sourceViewController = unwindSegue.source
         
     }
     
@@ -164,5 +169,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.present(alerta, animated: false, completion: nil);
         }
     }
+    
+    
     
 }
