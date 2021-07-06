@@ -24,14 +24,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        //retirar o logoff automatico
-//        do
-//            { try auth.signOut();
-//        }catch{
-//            print("teste")
-//        }
-        
-        
         handleLogado = auth.addStateDidChangeListener({ auth, user in
             if user != nil {
                 self.performSegue(withIdentifier: "loginAutomatico", sender: nil);

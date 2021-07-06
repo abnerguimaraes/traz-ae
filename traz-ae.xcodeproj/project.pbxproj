@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2348999C26928B2000D64EF9 /* ComprasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348999B26928B2000D64EF9 /* ComprasTableViewCell.swift */; };
 		2348999E26928CD700D64EF9 /* ComprasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */; };
+		234899A42694029F00D64EF9 /* ComecarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234899A32694029F00D64EF9 /* ComecarViewController.swift */; };
 		23CEFA8A268FAA6A0094C822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA89268FAA6A0094C822 /* AppDelegate.swift */; };
 		23CEFA8C268FAA6A0094C822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */; };
 		23CEFA91268FAA6A0094C822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA8F268FAA6A0094C822 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		2348999B26928B2000D64EF9 /* ComprasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewCell.swift; sourceTree = "<group>"; };
 		2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewController.swift; sourceTree = "<group>"; };
+		234899A32694029F00D64EF9 /* ComecarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComecarViewController.swift; sourceTree = "<group>"; };
 		23CEFA86268FAA6A0094C822 /* traz-ae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "traz-ae.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CEFA89268FAA6A0094C822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CEFA8B268FAA6A0094C822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				23CEFAA7268FFC8F0094C822 /* CadastroViewController.swift */,
 				23CEFAAC2690AC6B0094C822 /* ContatosViewController.swift */,
 				2348999D26928CD700D64EF9 /* ComprasTableViewController.swift */,
+				234899A32694029F00D64EF9 /* ComecarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234899A42694029F00D64EF9 /* ComecarViewController.swift in Sources */,
 				23CEFAA6268FBC4F0094C822 /* LoginViewController.swift in Sources */,
 				2348999C26928B2000D64EF9 /* ComprasTableViewCell.swift in Sources */,
 				23CEFAAB26900A200094C822 /* Alerta.swift in Sources */,

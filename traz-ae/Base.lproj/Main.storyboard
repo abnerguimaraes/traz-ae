@@ -231,7 +231,7 @@
         <!--compras-->
         <scene sceneID="4ao-Ew-myC">
             <objects>
-                <viewController id="mYz-pR-Juj" sceneMemberID="viewController">
+                <viewController id="mYz-pR-Juj" customClass="ComecarViewController" customModule="traz_ae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Kh-eh-SRM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,7 @@
             </objects>
             <point key="canvasLocation" x="2594.202898550725" y="-461.38392857142856"/>
         </scene>
-        <!--Compras Table View Controller-->
+        <!--Welcome-->
         <scene sceneID="FyF-Yc-KWz">
             <objects>
                 <tableViewController id="h8q-bs-tOt" customClass="ComprasTableViewController" customModule="traz_ae" customModuleProvider="target" sceneMemberID="viewController">
@@ -366,7 +366,17 @@
                             <outlet property="delegate" destination="h8q-bs-tOt" id="VSi-x2-jJ5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zRc-VP-ijm"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="zRc-VP-ijm">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="aGb-x4-qEe">
+                            <color key="tintColor" red="0.0" green="0.41284048559999997" blue="0.31744286420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="apagarConcluidos:" destination="h8q-bs-tOt" id="9iY-fU-kI0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navBar" destination="zRc-VP-ijm" id="N6F-1c-nMS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUI-po-trf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

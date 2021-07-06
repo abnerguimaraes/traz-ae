@@ -8,7 +8,10 @@ import Firebase
 import UIKit
 
 class ComprasTableViewController: UITableViewController, OptionButtonsDelegate, UITextFieldDelegate {
-
+    
+    //tela
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     //globais
     let auth = Auth.auth();
     let db = Firestore.firestore();
@@ -38,7 +41,15 @@ class ComprasTableViewController: UITableViewController, OptionButtonsDelegate, 
                 }
             }
         }
+        //nome na navbar
+        db.collection("usuarios").document(self.idLogado).getDocument { querySnap, error in
+            if let data = querySnap{
+                let item = data.data();
+                self.navBar.title = item!["nome"] as? String;
+            }
+        }
         
+        navBar.setHidesBackButton(true, animated: false);
         
         self.tableView.allowsMultipleSelectionDuringEditing = false;
         self.tableView.allowsSelection = false;
@@ -66,7 +77,15 @@ class ComprasTableViewController: UITableViewController, OptionButtonsDelegate, 
         let dados = self.listaCompras[indexPath.row];
         let itemCompra = dados["descricao"] as? String;
         let finalizado = dados["finalizado"] as? String;
-        
+
+        if finalizado == "false"{
+            cell.btnCheck.isHidden = false;
+            cell.btnChecked.isHidden = true;
+        } else if finalizado == "true"{
+            cell.btnCheck.isHidden = true;
+            cell.btnChecked.isHidden = false;
+        }
+            
         
         cell.lblItem.text = itemCompra;
         cell.indexPath = indexPath;
@@ -117,38 +136,7 @@ class ComprasTableViewController: UITableViewController, OptionButtonsDelegate, 
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
-    // Override to support editing the table view.
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//
-//        if editingStyle == .delete {
-//
-//        }
-//    }
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let  off = self.tableView.contentOffset.y
@@ -232,13 +220,33 @@ class ComprasTableViewController: UITableViewController, OptionButtonsDelegate, 
         recuperarListaCompras();
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false);
+        navBar.setHidesBackButton(true, animated: false);
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         comprasListener.remove();
+        navigationController?.setNavigationBarHidden(true, animated: false);
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true);
     }
     
-
+    @IBAction func apagarConcluidos(_ sender: Any) {
+        print("apagar Concluidos");
+        
+        for item in listaCompras{
+            if item["finalizado"] as! String == "true"{
+                print("aqui")
+                self.db.collection("compras").document(self.idLogado).collection("compra").document(item["descricao"] as! String).delete();
+                if self.idParceiro != ""{
+                    self.db.collection("compras").document(self.idParceiro).collection("compra").document(item["descricao"] as! String).delete();
+                }
+            }
+        }
+        
+    }
+    
 }
